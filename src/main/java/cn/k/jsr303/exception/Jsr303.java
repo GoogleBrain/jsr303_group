@@ -29,8 +29,8 @@ public class Jsr303 {
 
     @ExceptionHandler(value = Exception.class)
     public String  handleValid(Exception e){
-        System.out.println(e.getMessage());
-        System.out.println(e.getClass());
+        System.out.println(">>>>>>>>>>>>>>>>"+e.getMessage());
+        System.out.println("》》》》》》》》》》"+e.getClass());
         return  e.getMessage();
     }
 }
